@@ -1,0 +1,27 @@
+if game.PlaceId == 6284583030 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Korblox Hub", HidePremium = false, IntroText = "Korblox",SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--functions
+function roblox()
+	loadstring(game:HttpGet("https://pastebin.com/raw/VzA6kF7D"))()
+	
+end
+    
+--Coding
+local KorbloxTab = Window:MakeTab({
+    Name = "Korblox",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+KorbloxTab:AddButton({
+	Name = "Get Korblox",
+	Callback = function ()
+      		print("button pressed")
+	roblox()
+  	end
+})
+
+end
+OrionLib:Init()
